@@ -1,35 +1,54 @@
-// let score = undefined
-
-// // Case when Score is undefined 
-// let valueInNumber0 =  Number(score)
-// // But when we will check it will give number as a type
-// console.log(typeof (valueInNumber0))
-// // This will give NaN
-// console.log(valueInNumber0);
-
-// // Case when Score is Null 
-// let valueInNumber1 =  Number(score)
-// // But when we will check it will give number as a type
-// console.log(typeof (valueInNumber1))
-// // This will give 0 
-// console.log(valueInNumber1);
-
-// // Case when Score is String
-// let valueInNumber2 =  Number(score)
-// // But when we will check it will give number as a type
-// console.log(typeof (valueInNumber2))
-// // This will give NaN -> Not a Number when string is "33abc" && number when string is "33"
-// console.log(valueInNumber2);
+// ******************************************************* Converting into String ********************************************************
+// let name = true
+// console.log(typeof name);
 
 
-// let isLogged = "aditya"
-// // When we write 1->convert into true, when 0-> convert into false
-// // when ""-> empty string false, When "someting"-> true
-// let boolInLoggedIn = Boolean(isLogged)
-// console.log(boolInLoggedIn);
+// let name1 = Number(name)
+// console.log(name1);
+// console.log(typeof name1);
 
-// let sumNumber =12
-// let StringNumber = String(sumNumber);
-// // The number will look like number But when we check it will get converted into String
-// console.log(StringNumber);
-// console.log(typeof StringNumber);
+// value such as :- aditya, 12af
+// empty string has value 0
+// if we convert such value from string to integer it gives NnN (not a number)
+// if we convert string containg only number then it will return the numeric value
+// if we convert the null to number ans is -> 0
+// if we convert the undefined to undefined ans is -> 0
+// if we convert the boolean to number ans is -> 0 for false and 1 for true
+
+
+
+
+// ******************************************************* Converting into String ********************************************************
+// the ans is always String
+
+
+// ******************************************************* Converting into Boolean ********************************************************
+// For converting into Boolean
+// let age = undefined
+// let age2 = Boolean(age);
+// console.log(age2);
+
+// for Number only for 0 or -0 false otherwise true
+// for String the always true except empty string "" for this false
+// for null gives false
+// for undefined give false
+// for NaN not a null give false
+// other than that for all give true
+
+
+// *********************************************** Conversion of Number and Boolean with operator *****************************************
+
+//Talking about othe operator other than + they convert the string into the number and then operate on those number
+// console.log("3" * "3")
+// console.log("3" / "3")
+// console.log("23" - "4")
+// console.log("3" ** "2")
+
+// Talking about the + operator
+console.log(1+1) // number sum
+console.log("1"+"1") // concat
+console.log(1+"2") // concat
+console.log(23+"23") // concat
+console.log("23" + 23 + 1) //concat
+console.log(23 + 1 + "23") //sum of forst two then concat with the last 
+console.log(23 +( 1 + "23")) // concat

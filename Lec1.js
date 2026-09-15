@@ -1,29 +1,28 @@
-/*
-1. Let can only be declared Once but can be changed later in the same module
-2. It is block scoped {}  can only be used within the block it is declared
-*/
-const accountId = 132433
-/*
-1. Let can only be declared Once but can be changed later in the same module
-2. It is block scoped {} can only be used within the block it is declared
-*/
-let accountName = "Aditya"
-/*
-1. Let can only be declared Once but can be changed later in the same module
-2. It is block scoped {}  can only be used within the block it is declared
-*/
-var accountEmail = "aditya@gmail.com"
-
-console.log(accountId);
-console.log(accountEmail);
-accountEmail = "manik@gmail.com"
-console.log(accountEmail);
-accountName = "manik"
-console.log(accountName);
-
-console.table([accountEmail,accountId,accountName])
+// const name = "aditya"
+//const name = "divij"
+// now we cannot do this will give error 
 
 
-// If we define but do not intialize a value then it is undefined
-let accountState
-console.log(accountState);
+// name  = "divij"
+//Also can't do this it give TypeError: Assignment to constant variable
+
+
+// if(true){
+//     let age = 19;
+// }
+// console.log(age);
+// This will give error becuse let and consta re blocked scope
+
+
+// if(true){
+//     var age = 10;
+// }
+// console.log(age);
+// This will work becuse var is function scoped
+
+
+// function mail(){
+//     var age = 20;
+// }
+// console.log(age);
+// But this will not work 
