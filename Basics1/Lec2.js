@@ -1,4 +1,5 @@
 "use strict"; //By this it will treate the whole Js code as newer version
+// ******************************************************* Data Types ********************************************************
 
 // There are 7 type of primitive data types
 

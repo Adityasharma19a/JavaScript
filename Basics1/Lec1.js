@@ -1,3 +1,5 @@
+// ******************************************************* Let,var const ********************************************************
+
 // const name = "aditya"
 //const name = "divij"
 // now we cannot do this will give error 
@@ -26,3 +28,8 @@
 // }
 // console.log(age);
 // But this will not work 
+
+/*
+Function Scope: A variable declared with var is scoped to the entire function in which it is defined. 
+It is hoisted to the top of the function and initialized as undefined. It ignores block boundaries like if or for.
+*/

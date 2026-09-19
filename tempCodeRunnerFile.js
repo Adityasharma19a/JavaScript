@@ -1,1 +1,1 @@
-fwe4
+console.log(Math.floor(Date.now()/1000))
