@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html events</title>
+</head>
+<body style="background-color: rgb(67, 67, 67); color: #fff;">
+    <h2>Amazing image</h2>
+    
+    <div>
+        <ul id="images">
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlsUGSKSKbnLgECWsajYXWbNDhyxqv5t7EzPvCbrWyXw&s" alt="photoshop"
+            id="photoshop" width="200px"></li>
+
+            <li><img src="https://cdn1.matadornetwork.com/blogs/1/2011/05/japan-1200x729.jpg" alt="Japan"
+                id="japan" width="200px"></li>
+
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP2HZly57Vhs6OGEfKLZfuh5H_FfL6_qaBtkj58LisAg&s=10" alt="River"
+                id="river" width="200px"></li>
+
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGXBhWth8VTIHx1nQjAWEv4tNqE3XTuxx1inLPU5lMPA&s=10" alt="owl"
+                id="owl" width="200px"></li>
+
+            <li><a href="https://google.com" id="google" style="color:aliceblue;">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // events run sequentially but their are some exception
+    // events are also unsyncronus becuse they are triggered when siome activity happens
+
+    // this approch give less functinality 
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+
+    //second approch
+    
+    // type
+    // timestamp
+    // defaultprevented
+    // target , toElement , sourceElement , currentTarget
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, KeyCode
+
+    // event bubbling, eventcapturing based on usecase
+
+
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log("cliked inside the url")
+    }, false)
+
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log("cliked owl");
+        e.stopPropagation()
+    }, false)
+
+
+
+</script>
+</html>

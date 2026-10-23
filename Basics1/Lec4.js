@@ -56,3 +56,9 @@ console.log(user1.name); // Rahul
 // The important concept is:
 
 // > **Primitive assignment creates an independent value; object assignment copies a reference to the same object.**
+
+
+
+
+
+// A shallow copy creates a new outer object, but if the object contains nested objects/arrays, those nested objects are still shared.
